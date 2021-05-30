@@ -1,0 +1,103 @@
+@import url(reset.css);   /* Here we import our reset styles */
+
+
+/* Styles for the Slides */
+
+/* In order to make the slide show work, you only need to include these styles */
+#gallery {
+	overflow: hidden; 		/* This makes sure that the extra photos are hidden */
+	width: 960px; 			/* This should be set to the width of your gallery ( the part that you actually want viewable) */
+}
+
+.slide {
+	float: left; 			/* This makes sure that all our images display in a row */
+}
+
+/* End styles for slides */
+
+
+
+/* Styles for the gallery navigation */
+
+/* 
+ * These styles are for the next and previous buttons. 
+ * They are optional, and you should modify then to suit your purposes 
+*/
+#menu {
+	/* 	These three styles are how we position the naviagion buttons. 
+		Setting the position to relative allows us to move them around.
+		We then can adjust the top and left properties to get the navigation buttons where we want them
+		These numbers have the navigation in the bottom left. 
+		You should change the numbers to how you want them
+	*/
+	position: relative;
+	left: 850px;
+	top: 340px;
+	
+	
+	z-index: 1000; 				/* Setting a high z-index makes sure that this will display on top of our gallery images */
+	overflow: hidden; 			/* make sure the div encloses it's children */
+		
+}
+#gallery #menu a {
+	/* 	The width is set to be the same as the image we are using for the background (see below)
+		You should change this to match your images
+	*/
+	height: 26px;
+	width: 26px;
+
+	/* These are necessary for displaying the gallery nav properly */
+	display: block;
+	float: left;
+	text-indent: -1000px; 		/* This causes the text to display off the page. That way we see only the image */
+	
+}
+#gallery a.next {
+	/* Change this image to your own image */
+	background: transparent url(../images/arrow-next.png) 0 0 no-repeat;
+}
+
+#gallery a.previous {
+	/* Change this image to your own image */
+	background: transparent url(../images/arrow-previous.png) 0 0 no-repeat;
+	margin-right: 15px;
+}
+
+/* End styles for gallery navigation */
+
+
+
+
+
+/* Begin Normal Styles */
+
+body {
+	color: #444;
+	font: 16px/1.5em Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#container {
+	margin: 0 auto;
+	text-align: left;
+	width: 960px;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 2;
+	font-weight: bold;
+}
+
+/* Styles for the Slides */
+/* In order to make the slide show work, you only need to include these styles */
+
+#gallery {
+    overflow: hidden;	/* This makes sure that the extra photos are hidden */
+    width: 960px;		/* This should be set to the width of your 
+                  gallery ( the part that you actually want viewable) 
+                  Make sure to change this value to the width you want visible */
+  }
+  .slide {
+    float: left; 		/* This makes sure that all our images display in a row */
+  }
