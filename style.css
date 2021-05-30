@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -18,7 +19,6 @@ body {
   justify-content: space-between;
   margin: auto 100px;
   align-items: center;
-  
 }
 
 .banner .sell {
@@ -37,7 +37,7 @@ body {
 /* Styling Header */
 
 header {
-    background-color: white;
+  background-color: white;
 }
 
 .nav_container {
@@ -48,10 +48,84 @@ header {
 }
 
 .far_right_nav .navvy {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.search_button .button {
-    background-color: var(--buttonColor);
-    border: none;
+button {
+  background-color: var(--buttonColor);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search_button {
+  width: 50%;
+}
+
+.search_button input {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #c7c7cd;
+  outline: none;
+}
+
+.search_button .search {
+  position: relative;
+  width: 100%;
+}
+
+.search_button .search .fas {
+  position: absolute;
+  left: 4%;
+  top: 30%;
+}
+
+/* Ends Header section */
+
+/* Styling Menu section */
+
+.main_section {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 15px;
+  height: 150px;
+  /* background-color: #f68b1e; */
+  margin: 15px 100px;
+}
+
+.main_section .menu_div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 45px 15px 10px;
+  border-radius: 5px;
+}
+
+.main_section .slider_div {
+  border-radius: 20px;
+  /* background-color: aqua; */
+}
+
+.main_section .slider_div img {
+  width: 100%;
+  margin: auto;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+.main_section .menu_div span {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #707070;
+}
+
+.main_section .main_right {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 45px 15px 10px;
+  border-radius: 5px;
 }
