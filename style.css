@@ -25,10 +25,7 @@ body {
   color: var(--buttonColor);
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .right_of_sell .logo {
   margin-left: 20px;
@@ -40,18 +37,12 @@ header {
   background-color: white;
 }
 
-.nav_container {
-  display: flex;
-  justify-content: space-between;
-  margin: var(--standardMargin);
-  align-items: center;
-}
 
 .far_right_nav .navvy {
   margin-left: 20px;
 }
 
-button {
+.button button {
   background-color: var(--buttonColor);
   border: none;
   color: white;
@@ -61,9 +52,6 @@ button {
   cursor: pointer;
 }
 
-.search_button {
-  width: 50%;
-}
 
 .search_button input {
   width: 100%;
@@ -87,45 +75,10 @@ button {
 
 /* Styling Menu section */
 
-.main_section {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 15px;
-  height: 150px;
-  /* background-color: #f68b1e; */
-  margin: 15px 100px;
+
+.border_curve {
+    border-radius: 5px;
 }
 
-.main_section .menu_div {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 15px 45px 15px 10px;
-  border-radius: 5px;
-}
 
-.main_section .slider_div {
-  border-radius: 20px;
-  /* background-color: aqua; */
-}
 
-.main_section .slider_div img {
-  width: 100%;
-  margin: auto;
-  /* height: 100%; */
-  object-fit: contain;
-}
-
-.main_section .menu_div span {
-  margin-bottom: 15px;
-  font-size: 12px;
-  color: #707070;
-}
-
-.main_section .main_right {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 15px 45px 15px 10px;
-  border-radius: 5px;
-}
