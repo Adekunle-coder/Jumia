@@ -1,21 +1,20 @@
-*{
+* {
   /* border: 1px solid red; */
   box-sizing: border-box;
 }
 
 :root {
   --buttonColor: #f68b1e;
+  --buttonEmail: #282828;
   --footer1: #282828;
   --standardMargin: auto 100px;
 }
-
 
 /* Styling Header */
 
 header {
   background-color: white;
 }
-
 
 .far_right_nav .navvy {
   margin-left: 20px;
@@ -31,10 +30,19 @@ header {
   cursor: pointer;
 }
 
+.btnEmail button {
+  background-color: var(--buttonEmail);
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
 .search_button input {
   width: 100%;
-  padding: 10px 40px;
+  padding: 5px 40px;
   border: 1px solid #c7c7cd;
   outline: none;
 }
@@ -47,17 +55,72 @@ header {
 .search_button .search .fas {
   position: absolute;
   left: 4%;
-  top: 30%;
+  top: 27%;
 }
 
 /* Ends Header section */
 
 /* Styling Menu section */
 
-
 .border_curve {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
+/* Styling MegaMenu */
 
+.has-submenu {
+  /* position: relative; */
+  cursor: pointer;
+}
 
+.megamenu {
+  position: relative;
+}
+
+.has-submenu:hover i,
+.has-submenu:hover span {
+  color: var(--buttonColor);
+}
+
+.has-submenu:hover .submenu {
+  visibility: visible;
+}
+
+.submenu {
+  position: absolute;
+  height: 400px;
+  width: 760px;
+  background-color: white;
+  left: 95%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 3;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 45px;
+  border-left: 1px solid rgb(232, 229, 229);
+  visibility: hidden;
+  transition: 0.1s all ease-in-out;
+}
+
+.submenu li,
+.submenu a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.submenu a:hover {
+  color: var(--buttonColor);
+}
+
+.submenu p {
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(232, 229, 229);
+  padding-bottom: 10px;
+}
+
+.submenu-list {
+  padding-top: 10px;
+}
