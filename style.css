@@ -12,11 +12,14 @@
 
   /* section start */
   .section_wrapper, .wrapper-stock{
-	  width: 80%;
 	  position: relative;
 	  margin: auto 140px;
 	  background-color: white;
 	  margin-bottom: 20px;
+  }
+
+  .category_width{
+    background-color:rgb(245,245,245);
   }
 
    .slider_section{
@@ -165,7 +168,9 @@ stock section  */
 }
 
 .parent_category-section{
-	margin-top: 20px;	
+	/* margin-top: 20px;	 */
+  background-color: white;
+  margin-right: 20px;
 }
 
 .parent_category_grocery{
@@ -312,6 +317,7 @@ SELLER SCORE */
 
 .parent_grocery{
 	width: 100%;
+  background-color: white;
 	border:  2px solid rgb(199,199,205);
 }
 
@@ -360,4 +366,18 @@ button{
 
 
 
+
+/* ADE CSS */
+
+.wrapper-stock h4, h5, p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.wrapper-stock ul{
+  margin-left: 20px;
+}
+.wrapper-stock col{
+  background-color: white;
+}
 
